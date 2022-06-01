@@ -23,7 +23,7 @@
 ### Setup and Installation
 1. Clone the repository
 ```
-    git clone https://github1.eng.fireeye.com/sc-qa/nxautomation.git
+   git clone https://github.com/AnshuGITHUBPratice1/Imperva.git
 ```
 2. To run the script
 ```
