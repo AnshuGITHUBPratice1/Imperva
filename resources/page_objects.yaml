@@ -1,0 +1,34 @@
+GITHomePage:
+  search_box:
+    locator_type: xpath
+    locator_val: //form[@class="js-site-search-form"]//child::input[1]
+SearchResultPage:
+  no_of_results:
+    locator_type: xpath
+    locator_val: //h3[contains(text(), 'repository results')]
+  repo_list:
+    locator_type: xpath
+    locator_val: //ul[@class='repo-list']/li
+  repo_title:
+    locator_type: class_name
+    locator_val: v-align-middle
+  repo_desc:
+    locator_type: xpath
+    locator_val: .//p[@class='mb-1']
+  repo_tags:
+    locator_type: xpath
+    locator_val: .//a[@data-ga-click='Topic, search results']
+  repo_stars:
+    locator_type: xpath
+    locator_val: .//a[@class='Link--muted']
+  repo_lang:
+    locator_type: xpath
+    locator_val: .//span[@itemprop='programmingLanguage']
+  repo_license:
+    locator_type: xpath
+    locator_val: .//div[contains(@class,'mr-3') and contains(text(), 'license')]
+  repo_updated_time:
+    locator_type: xpath
+    locator_val: .//div[contains(text(), 'Updated')]//child::relative-time
+
+
