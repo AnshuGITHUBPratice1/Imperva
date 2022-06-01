@@ -16,6 +16,7 @@ import os.path
 from argparse import ArgumentParser
 from datetime import datetime
 
+import config
 from products.base_class import Base_Class
 from page_objects.home_page import HomePage
 from lib.util import *
@@ -115,7 +116,7 @@ def main(args):
         LOG.info("Starting git search process")
         browser_type = args.get("browser_type")
         git_search = GitSearch(config.GIT_URL, browser_type)
-        search_result = git_search.get_git_search_result("Security")
+        search_result = git_search.get_git_search_result(config.SEARCH_PATTERN)
 
         timestamp = datetime.now().strftime("%d%H%M%S")
         com_util = Common_Util()

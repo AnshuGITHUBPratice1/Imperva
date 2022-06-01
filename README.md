@@ -20,6 +20,11 @@
   executable_path = config.CHROMEDRIVER_WIN
   self.driver = webdriver.Chrome(executable_path=executable_path, options=chrome_options)
  ```
+- Search pattern can be changed in config.py file
+```
+    SEARCH_PATTERN = "Security"
+```
+
 ### Setup and Installation
 1. Clone the repository
 ```
